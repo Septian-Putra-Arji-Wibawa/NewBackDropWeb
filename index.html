@@ -13,16 +13,17 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,200&family=Jost:wght@300&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,200&family=Jost:wght@300&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
     
   </head>
     <style>
       body{
-        /* background-image: url("assets/_DSC0607Edit.jpg");
-        background-size: 5114px 3678px;
-        background-repeat: no-repeat;
-        background-position: center center; */
+        overflow-x: hidden;
       }
 
       .cover {
@@ -82,6 +83,18 @@
 
       .card{
         margin:1%;
+      }
+
+      .card-text{
+        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Jost', sans-serif;
+        /* font-weight: bold; */
+        /* text-align: left; */
+      }
+
+      .linkIG{
+        text-decoration: none;
+        color: black;
       }
 
       .header{
@@ -173,33 +186,41 @@
         padding: 2%;
         flex-wrap: wrap;
       }
+
       .container-copyright{
         display: flex;
         background-color: #1B2430;
-        /* height: 100vh; */
+        flex-direction: row;
         flex-flow: row wrap;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-wrap: nowrap;
+        padding: 5%;
+        
       }
 
-      .container-content-copyright{
-        /* height: 75vh; */
+      .CR-Right{
+        flex: 70;
+        flex-direction: row;
+        flex-flow: row wrap;
+        flex-wrap: nowrap;
+        padding: 7%;
+      }
+
+      .CR-Left{
+        flex: 40;
+        padding: 1%;
+      }
+
+      .img-Copy{
         width: 100%;
-        justify-content: center;
-        display: inline-flex;
-        /* flex-flow: row wrap; */
-        padding: 2%;
-        flex-wrap: wrap;
+        
       }
 
-      .header-copy{
-        font-family: 'Josefin Sans', sans-serif;
-        font-family: 'Jost', sans-serif;
-        font-weight: bold;
-        font-size: 36px;
-        color: white;
-        padding-top: 2%;
+      @media (max-width: 800px) {
+      .container-copyright {
+        flex-direction: column;
+        }
       }
+      
     </style>
 
   <body>
@@ -245,31 +266,32 @@
       <p class="header"> Kami Melayani</p>
 
         <div class="container-content">
-          <div class="card" style="width: 15rem;">
+          <div class="card" style="width: 15rem; height: max-content;">
             <img src="assets/_DSC0296.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text desc1">Kami <a href="https://instagram.com/newbackdrop?igshid=YmMyMTA2M2Y=" class="linkIG">@newbackdrop</a> melayani berbagai acara spesial kamu, mulai dari lamaran, pernikahan, tasyakuran, khitanan sampai ulang tahun.
+                Dekorasi dan backdrop yang kami tawarkan adalah backdrop premium dengan harga ramah di kantong.</p>
             </div>
           </div>
 
-          <div class="card" style="width: 15rem;">
+          <div class="card" style="width: 15rem; height: max-content;">
+            <img src="assets/_DSC1052.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text desc1">Pilihan backdrop dari kami <a href="https://instagram.com/newbackdrop?igshid=YmMyMTA2M2Y=" class="linkIG">@newbackdrop</a>, selalu baru dan mengikuti zaman.Bahkan para calon client pun bisa reqwest atau custom sesuai keinginan client. </br>Dan kami <a href="https://instagram.com/newbackdrop?igshid=YmMyMTA2M2Y=" class="linkIG">@newbackdrop</a> akan memberikan hasil yang terbaik untuk para calon client kami.</p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 15rem; height: max-content;">
             <img src="assets/_DSC0607.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text desc1">Selain dekorasi, kami <a href="https://instagram.com/newbackdrop?igshid=YmMyMTA2M2Y=" class="linkIG">@newbackdrop</a> juga bekerja sama dengan partner partner fotoghraphy, dengan budget minimalis tetapi hasil spesialis.</p>
             </div>
           </div>
 
-          <div class="card" style="width: 15rem;">
-            <img src="assets/_DSC1052.jpg" class="card-img-top" alt="...">
+          <div class="card" style="width: 15rem; height: max-content;">
+            <img src="assets/WhatsApp Image 2022-06-28 at 20.40.25.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-
-          <div class="card" style="width: 15rem;">
-            <img src="assets/_DSC1052.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text desc1">Kami <a href="https://instagram.com/newbackdrop?igshid=YmMyMTA2M2Y=" class="linkIG">@newbackdrop</a> melayani paket indoor dan outdoor.</p>
             </div>
           </div>
 
@@ -297,32 +319,30 @@
         <p class="header"> Mulai dari</p>
           <div class="container-content-price">
 
-            <div class="card" style="width: 20rem;">
-              <h5 class="card-header">pricelist1</h5>
+            <div class="card" style="width: 25rem;">
+              <img src="assets/WhatsApp Image 2022-06-28 at 05.46.15 (1).jpeg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Order</a>
+                <!-- <h5 class="card-title">Card title</h5> -->
+                <a href="https://api.whatsapp.com/send?phone=6287888696876&text=saya%20ingin%20memesan%20paket%20Circle%20Flower%20A" class="btn btn-success">Order</a>
               </div>
             </div>
 
-            <div class="card" style="width: 20rem;">
-              <h5 class="card-header">pricelist2</h5>
+            <div class="card" style="width: 25rem;">
+              <img src="assets/WhatsApp Image 2022-06-28 at 05.46.14 (2).jpeg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Order</a>
+                <!-- <h5 class="card-title">Card title</h5> -->
+                <a href="https://api.whatsapp.com/send?phone=6287888696876&text=saya%20ingin%20memesan%20paket%20Papan%20Putih%20A" class="btn btn-success">Order</a>
               </div>
             </div>
 
-            <div class="card" style="width: 20rem;">
-              <h5 class="card-header">pricelist3</h5>
+            <div class="card" style="width: 25rem;">
+              <img src="assets/WhatsApp Image 2022-06-28 at 05.46.14 (1).jpeg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Order</a>
+                <!-- <h5 class="card-title">Card title</h5> -->
+                <a href="https://api.whatsapp.com/send?phone=6287888696876&text=saya%20ingin%20memesan%20paket%20Papan%20Warna" class="btn btn-success">Order</a>
               </div>
             </div>
+
           </div>
         </div>
 
@@ -330,29 +350,47 @@
         <p class="header"> Produk Kami</p>
         <div class="container-content-product">
 
-          <div class="card" style="width: 15rem;">
+          <div class="card" style="width: 15rem; height: fit-content;">
             <img src="assets/_DSC0296.jpg" class="card-img-top" alt="...">
           </div>
-          <div class="card" style="width: 15rem;">
+          <div class="card" style="width: 15rem; height: fit-content;">
             <img src="assets/_DSC0607.jpg" class="card-img-top" alt="...">
           </div>
-          <div class="card" style="width: 15rem;">
-            <img src="assets/_DSC1052.jpg" class="card-img-top" alt="...">
+          <div class="card" style="width: 15rem; height: fit-content;">
+            <img src="assets/DSC07636 (1).jpg" class="card-img-top" alt="...">
           </div>
-          <div class="card" style="width: 15rem;">
-            <img src="assets/_DSC1052.jpg" class="card-img-top" alt="...">
+          <div class="card" style="width: 15rem; height: fit-content;">
+            <img src="assets/DSC07381.jpg" class="card-img-top" alt="...">
           </div>
+          
 
         </div>
       </div>
 
       <div class="container-copyright">
-        <p class="header-copy"> Copyright Here </p>
-        <div class="container-content-copyright">
-
+        
+          <div class="CR-Left">
+            <img src="/assets/20220613_142451_0000.png" alt="" class="img-Copy">
+          </div>
           
+          <div class="CR-Right">
+            <div>
+              <img src="assets/placeholder.png" class="img-fluid" alt="..." style="width: 9%; padding: 1%;">
+              <a style="color: white; text-decoration: none; font-family: 'Josefin Sans', sans-serif;
+              font-family: 'Jost', sans-serif;font-weight: bold;text-align: justify;" href="https://goo.gl/maps/4uXGDnQ2wvYo88Le7">Jl. Halim Perdana Kusuma No.72, RT.003/RW.001, Kb. Besar, Kec. Batuceper, Kota Tangerang, Banten 15122, Indonesia</a>
+            </div>
+            <div>
+              <img src="assets/phone.png" class="img-fluid" alt="..." style="width: 9%; padding: 1%;">
+              <a style="color: white; text-decoration: none; font-family: 'Josefin Sans', sans-serif;
+              font-family: 'Jost', sans-serif;font-weight: bold;text-align: justify;" href="https://api.whatsapp.com/send?phone=6287888696876">+62 878-8869-6876</a>
+            </div>
+            <div>
+              <img src="assets/gmail.png" class="img-fluid" alt="..." style="width: 9%; padding: 1%;">
+              <a style="color: white; text-decoration: none; font-family: 'Josefin Sans', sans-serif;
+              font-family: 'Jost', sans-serif;font-weight: bold;text-align: justify;" href="mailto:fifiardiana10@gmail.com">fifiardiana10@gmail.com</a>
+          </div>
+          </div>
 
-        </div>
       </div>
 
     </div>

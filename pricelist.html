@@ -19,10 +19,7 @@
   </head>
     <style>
       body{
-        /* background-image: url("assets/_DSC0607Edit.jpg");
-        background-size: 5114px 3678px;
-        background-repeat: no-repeat;
-        background-position: center center; */
+        overflow-x: hidden;
       }
 
       .cover {
@@ -113,7 +110,39 @@
         padding-top: 2%;
       }
 
-      
+      .container-copyright{
+        display: flex;
+        background-color: #1B2430;
+        flex-direction: row;
+        flex-flow: row wrap;
+        flex-wrap: nowrap;
+        padding: 5%;
+        
+      }
+
+      .CR-Right{
+        flex: 70;
+        flex-direction: row;
+        flex-flow: row wrap;
+        flex-wrap: nowrap;
+        padding: 7%;
+      }
+
+      .CR-Left{
+        flex: 40;
+        padding: 1%;
+      }
+
+      .img-Copy{
+        width: 100%;
+        
+      }
+
+      @media (max-width: 800px) {
+      .container-copyright {
+        flex-direction: column;
+        }
+      }
     </style>
 
   <body>
@@ -265,13 +294,30 @@
       </div>
 
       <div class="container-copyright">
-        <p class="header-copy"> Copyright Here </p>
-        <div class="container-content-copyright">
-
-          
-
+        
+        <div class="CR-Left">
+          <img src="/assets/20220613_142451_0000.png" alt="" class="img-Copy">
         </div>
-      </div>
+        
+        <div class="CR-Right">
+          <div>
+            <img src="assets/placeholder.png" class="img-fluid" alt="..." style="width: 9%; padding: 1%;">
+            <a style="color: white; text-decoration: none; font-family: 'Josefin Sans', sans-serif;
+            font-family: 'Jost', sans-serif;font-weight: bold;text-align: justify;" href="https://goo.gl/maps/4uXGDnQ2wvYo88Le7">Jl. Halim Perdana Kusuma No.72, RT.003/RW.001, Kb. Besar, Kec. Batuceper, Kota Tangerang, Banten 15122, Indonesia</a>
+          </div>
+          <div>
+            <img src="assets/phone.png" class="img-fluid" alt="..." style="width: 9%; padding: 1%;">
+            <a style="color: white; text-decoration: none; font-family: 'Josefin Sans', sans-serif;
+            font-family: 'Jost', sans-serif;font-weight: bold;text-align: justify;" href="https://api.whatsapp.com/send?phone=6287888696876">+62 878-8869-6876</a>
+          </div>
+          <div>
+            <img src="assets/gmail.png" class="img-fluid" alt="..." style="width: 9%; padding: 1%;">
+            <a style="color: white; text-decoration: none; font-family: 'Josefin Sans', sans-serif;
+            font-family: 'Jost', sans-serif;font-weight: bold;text-align: justify;" href="mailto:fifiardiana10@gmail.com">fifiardiana10@gmail.com</a>
+        </div>
+        </div>
+
+    </div>
     </div>
 
 <script>
